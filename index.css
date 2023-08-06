@@ -50,8 +50,13 @@ a {
 
   &:hover {
     box-shadow: 0 0 5px 0 #c8c8c8;
-    transform: scale(1.01);
   }
+}
+
+.root > .active {
+  border: 1px solid purple;
+  box-shadow: 0 0 5px 0 #c8c8c8;
+  transform: scale(1.03);
 }
 .root > .container > input {
   accent-color: #007f61;
@@ -147,7 +152,7 @@ a {
     color: #007f61;
   }
 }
-.root > .box > span > .total {
+.root > .box > span > .btn {
   font-weight: bold;
 }
 .root > .cart_btn {

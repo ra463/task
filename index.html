@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="./script.js"></script>
     <title>Task</title>
   </head>
   <body>
     <!-- Its a responsive website you can also see this webpage on the smaller devices -->
-    <div class="root">
+    <div id="root" class="root">
       <div class="head">
         <p></p>
         <h2>Bundle & Save</h2>
@@ -20,7 +19,7 @@
         <div class="box">
           <div class="inner_box">
             <span>1 Pair</span>
-            <h3>DKK 195.00</h3>
+            <h3 class="price">DKK 195.00</h3>
           </div>
           <h3>50% OFF</h3>
         </div>
@@ -32,7 +31,7 @@
             <div class="inner_box_1">
               <div>
                 <span>2 Pair</span>
-                <h3>DKK 345.00</h3>
+                <h3 class="price">DKK 345.00</h3>
               </div>
               <span class="cut">DKK 195.00</span>
             </div>
@@ -91,14 +90,14 @@
         <div class="box">
           <div class="inner_box">
             <span>3 Pair</span>
-            <h3>DKK 528.00</h3>
+            <h3 class="price">DKK 528.00</h3>
           </div>
           <h3>60% OFF</h3>
         </div>
       </div>
       <div class="box">
         <span>Free 2 Day Shipping</span>
-        <span> Total: <span class="total">DKK 360.00</span> </span>
+        <span> Total: <span class="btn">DKK 360.00</span> </span>
       </div>
       <div class="cart_btn">
         <button type="submit">
@@ -110,4 +109,5 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="./script.js"></script>
 </html>
