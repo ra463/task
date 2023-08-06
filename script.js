@@ -16,3 +16,16 @@ container.forEach((item) => {
     btn.innerText = price;
   });
 });
+
+// toggling the inner container
+container.forEach((item) => {
+  item.addEventListener("click", () => {
+    var inner_container_2 = item.querySelector(".inner_container_2");
+    if (inner_container_2.style.display === "flex") {
+      inner_container_2.style.display = "none";
+    } else {
+      inner_container_2.style.display = "flex";
+    }
+  });
+})
+

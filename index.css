@@ -42,6 +42,7 @@ a {
 }
 .root > .container {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   border: 1px solid #c8c8c8;
   margin: 1rem;
@@ -50,13 +51,14 @@ a {
 
   &:hover {
     box-shadow: 0 0 5px 0 #c8c8c8;
+    box-shadow: 0 0 5px 0 #c8c8c8;
+    transform: scale(1.01);
+    cursor: pointer;
   }
 }
 
 .root > .active {
   border: 1px solid purple;
-  box-shadow: 0 0 5px 0 #c8c8c8;
-  transform: scale(1.03);
 }
 .root > .container > input {
   accent-color: #007f61;
@@ -69,7 +71,6 @@ a {
   width: 100%;
 }
 .root > .change {
-  flex-direction: column;
   background: #f4fbf9;
 }
 .root > .change2 {
@@ -110,7 +111,7 @@ a {
   }
 }
 .root > .container > .inner_container_2 {
-  display: flex;
+  display: none;
   gap: 0.7rem;
   width: 100%;
 }
