@@ -17,15 +17,11 @@ container.forEach((item) => {
   });
 });
 
-// toggling the inner container
+// make radio button checked of active class
+var radio = document.querySelectorAll(".radio");
 container.forEach((item) => {
   item.addEventListener("click", () => {
-    var inner_container_2 = item.querySelector(".inner_container_2");
-    if (inner_container_2.style.display === "flex") {
-      inner_container_2.style.display = "none";
-    } else {
-      inner_container_2.style.display = "flex";
-    }
+    var radio = item.querySelector(".radio");
+    radio.checked = true;
   });
-})
-
+});
